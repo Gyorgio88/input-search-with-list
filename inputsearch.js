@@ -9,7 +9,7 @@ var Functions=new Class({
 	Implements: [Chain, Events, Options],
 	options:{
 		url:'',				//Index.php?view=...
-		searchIn:'',	//table
+		searchIn:'',	//table MySql, ecc...
 		obj:'',				//Element
 		objValues:''	//Element return values that can be processed on the server side		
 		},
