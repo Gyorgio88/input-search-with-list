@@ -1,4 +1,5 @@
 /**
+	* Require Mootools  >= 'mootools-core-1.6.0.js' && 'MooTools-More-1.6.0.js'
 	*Copyright(c) 2015 Antonino Di Natale gyorgio88@gmail.com
 	*
 	*Version 1.0
