@@ -16,8 +16,7 @@ var divInp=new Element('div.input_search').adopt(new Element('input',{type:'text
   //Create event click for on List Result
   events:{
     click:function(){   
-    
-      // Call function Input Search of inputsearch.js
+// Call function Input Search of inputsearch.js
       new Functions({url:'index.php?...',objValues:'.div-box .user_list input',searchIn:'name your table MySQL, ecc...'(optional),obj:'.div-box div.input_search',
         onSuccess:function(res){
           console.log(res); // view result after onClick
