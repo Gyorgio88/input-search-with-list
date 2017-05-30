@@ -11,7 +11,7 @@ var Functions=new Class({
 		url:'',				//Index.php?view=...
 		searchIn:'',	//table
 		obj:'',				//Element
-		objValues:''	//Element return values		
+		objValues:''	//Element return values that can be processed on the server side		
 		},
 	
 	initialize: function(options){
