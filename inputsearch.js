@@ -20,12 +20,28 @@ var Functions=new Class({
 	},
 	ajax:function(url,loader,res,mt,res2,mt2,res3){
 			var self=this;
-			var ax=new Request({url:url,method:'post',onSuccess:function(result){$$(loader).cloak();
+			var ax=new Request({url:url,method:'post',
+			onSuccess:function(result){
+				$$(loader).cloak();
 				if(res){
-					$$(res).appendHTML(result,'before');
-				}else if(res2){$$(res2).set('html',result);
-				}else if(res3){self.resultList(result,res3);}
-				if(mt){eval('MS.'+mt);}else if(mt2){eval(mt2);}},onRequest:function(){$$(loader).show();if(res2){$$(res2).set('html','');}},onFailure: function(){alert("Caricamento AJAX fallito...");}});
+					$$(res).appendHTML(result,'before');}
+				else if(res2){
+					$$(res2).set('html',result);}
+				else if(res3){
+					self.resultList(result,res3);}
+				if(mt){
+					eval('MS.'+mt);}
+				else if(mt2){
+					eval(mt2);}
+			},
+			onRequest:function(){
+				$$(loader).show();
+				if(res2){
+					$$(res2).set('html','');}
+			},
+			onFailure: function(){
+				alert("Caricamento AJAX fallito...");}
+			});
 			return ax;
 	},
 	resultList:function(result,el){
