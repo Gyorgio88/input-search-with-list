@@ -11,10 +11,12 @@ Client side:
 var div=$$('.div-box');
 
 2 Create Elements Object
+
 var divInp=new Element('div.input_search').adopt(new Element('input',{type:'text','name':'input_search','placeholder':'Search...',
   //Create event click for on List Result
   events:{
-    click:function(){    
+    click:function(){   
+    
       // Call function Input Search of inputsearch.js
       new Functions({url:'index.php?...',objValues:'.div-box .user_list input',searchIn:'name your table MySQL, ecc...'(optional),obj:'.div-box div.input_search',
         onSuccess:function(res){
