@@ -1,8 +1,8 @@
 # Input Search with Selection List (like Facebook)
 A simple script that works with <a target="_blank" href="https://mootools.net">MooTools</a> 1.6 or more.
 
-##Basic Usage
-###Client side
+## Basic Usage
+#### Client side
 
 ```javascript
 //1 Create main div
