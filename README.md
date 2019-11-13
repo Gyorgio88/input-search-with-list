@@ -1,4 +1,4 @@
-# Input Search with Selection List (like Facebook)
+# Input Search with drop down list
 A simple script that works with <a target="_blank" href="https://mootools.net">MooTools</a> 1.6 or more.
 
 ## Basic Usage
