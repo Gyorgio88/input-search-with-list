@@ -8,11 +8,12 @@ A simple script that works with <a target="_blank" href="https://mootools.net">M
 //1 Create main div
 var div=$$('.div-box');
 
-//2 Create Elements Object
+//2 Create Elements
 var divInp = new Element('div.input_search')
     .adopt(
         new Element('input',{type:'text','name':'input_search','placeholder':'Search...',
-            //Create event click for on List Result
+            
+            //create an event for each item
             events:{
                 click:function(){   
             // Call function Input Search of inputsearch.js
